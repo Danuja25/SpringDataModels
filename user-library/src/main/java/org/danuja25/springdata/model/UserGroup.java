@@ -1,0 +1,40 @@
+package org.danuja25.springdata.model;
+
+/**
+ * All rights reserved
+ * Created by Hareen
+ * Date : 29/12/2019
+ * Time : 12:27 PM
+ */
+
+
+public class UserGroup {
+
+    private String code;
+    private String name;
+    private String description;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
