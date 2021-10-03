@@ -1,13 +1,13 @@
-package org.danuja25.springdata.handler;
+package org.danuja25.springdata.user.handler;
 
-import org.danuja25.springdata.entity.UserEntity;
-import org.danuja25.springdata.entity.UserGroupEntity;
-import org.danuja25.springdata.mapper.UserGroupMapper;
-import org.danuja25.springdata.mapper.UserMapper;
-import org.danuja25.springdata.model.User;
-import org.danuja25.springdata.model.UserGroup;
-import org.danuja25.springdata.repository.UserGroupRepository;
-import org.danuja25.springdata.repository.UserRepository;
+import org.danuja25.springdata.user.entity.UserEntity;
+import org.danuja25.springdata.user.entity.UserGroupEntity;
+import org.danuja25.springdata.user.mapper.UserGroupMapper;
+import org.danuja25.springdata.user.mapper.UserMapper;
+import org.danuja25.springdata.user.model.User;
+import org.danuja25.springdata.user.model.UserGroup;
+import org.danuja25.springdata.user.repository.UserGroupRepository;
+import org.danuja25.springdata.user.repository.UserRepository;
 import org.mapstruct.factory.Mappers;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -18,11 +18,11 @@ import java.util.stream.Collectors;
 @Service
 public class UserHandler
 {
-    private UserRepository userRepository;
-    private UserGroupRepository userGroupRepository;
-    private UserMapper userMapper;
-    private UserGroupMapper userGroupMapper;
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final UserRepository userRepository;
+    private final UserGroupRepository userGroupRepository;
+    private final UserMapper userMapper;
+    private final UserGroupMapper userGroupMapper;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     public UserHandler( UserRepository userRepository, UserGroupRepository userGroupRepository, BCryptPasswordEncoder bCryptPasswordEncoder )
     {

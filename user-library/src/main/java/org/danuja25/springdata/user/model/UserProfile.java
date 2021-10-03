@@ -1,4 +1,4 @@
-package org.danuja25.springdata.model;
+package org.danuja25.springdata.user.model;
 
 import java.util.Date;
 

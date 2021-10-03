@@ -1,6 +1,6 @@
-package org.danuja25.springdata.repository;
+package org.danuja25.springdata.user.repository;
 
-import org.danuja25.springdata.entity.UserEntity;
+import org.danuja25.springdata.user.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<UserEntity, Long> {

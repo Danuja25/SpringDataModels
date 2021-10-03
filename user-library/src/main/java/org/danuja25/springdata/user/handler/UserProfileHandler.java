@@ -1,9 +1,9 @@
-package org.danuja25.springdata.handler;
+package org.danuja25.springdata.user.handler;
 
-import org.danuja25.springdata.entity.UserProfileEntity;
-import org.danuja25.springdata.mapper.UserProfileMapper;
-import org.danuja25.springdata.model.UserProfile;
-import org.danuja25.springdata.repository.UserProfileRepository;
+import org.danuja25.springdata.user.entity.UserProfileEntity;
+import org.danuja25.springdata.user.mapper.UserProfileMapper;
+import org.danuja25.springdata.user.model.UserProfile;
+import org.danuja25.springdata.user.repository.UserProfileRepository;
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 @Service
 public class UserProfileHandler {
 
-    private UserProfileRepository userProfileRepository;
-    private UserProfileMapper userProfileMapper;
+    private final UserProfileRepository userProfileRepository;
+    private final UserProfileMapper userProfileMapper;
 
     public UserProfileHandler(UserProfileRepository userProfileRepository) {
         this.userProfileRepository = userProfileRepository;

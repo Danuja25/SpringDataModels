@@ -1,4 +1,4 @@
-package org.danuja25.springdata.mapper;
+package org.danuja25.springdata.user.mapper;
 
 public interface DirectMapper<DTO,DAO> {
 
