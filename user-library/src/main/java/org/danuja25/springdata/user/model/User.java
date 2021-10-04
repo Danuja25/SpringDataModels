@@ -3,12 +3,6 @@ package org.danuja25.springdata.user.model;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Hareen
- * Date : 6/29/2019
- * Time : 3:10 PM
- */
-
 public class User
 {
 

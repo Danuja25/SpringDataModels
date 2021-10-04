@@ -21,6 +21,7 @@ public class UserEntity implements Serializable {
     @Column(unique = true, name = "user_name")
     private String username;
 
+    @Column(name = "password", length = 65)
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)

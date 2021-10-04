@@ -39,6 +39,16 @@ public class UserHandler
         return userMapper.daoToDto( userEntity );
     }
 
+    public User validateUser( String userName, String password )
+    {
+        UserEntity userEntity = userRepository.findByUsername( userName );
+        if(bCryptPasswordEncoder.matches(password,userEntity.getPassword()))
+        {
+            return userMapper.daoToDto( userEntity );
+        }
+        return null;
+    }
+
     public List<User> getAllUsers()
     {
         return userRepository.findAll()

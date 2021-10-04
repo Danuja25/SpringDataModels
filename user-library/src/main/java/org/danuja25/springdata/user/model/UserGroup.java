@@ -1,13 +1,5 @@
 package org.danuja25.springdata.user.model;
 
-/**
- * All rights reserved
- * Created by Hareen
- * Date : 29/12/2019
- * Time : 12:27 PM
- */
-
-
 public class UserGroup {
 
     private String code;
