@@ -1,4 +1,4 @@
-package org.danuja25.springdata;
+package org.danuja25.springdata.user;
 
 public class  UserConstant {
 

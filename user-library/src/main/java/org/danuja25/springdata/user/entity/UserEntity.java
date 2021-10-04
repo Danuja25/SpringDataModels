@@ -1,6 +1,6 @@
-package org.danuja25.springdata.entity;
+package org.danuja25.springdata.user.entity;
 
-import org.danuja25.springdata.UserConstant;
+import org.danuja25.springdata.user.UserConstant;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
@@ -21,6 +21,7 @@ public class UserEntity implements Serializable {
     @Column(unique = true, name = "user_name")
     private String username;
 
+    @Column(name = "password", length = 65)
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
