@@ -1,8 +1,11 @@
 package org.danuja25.springdata.user.model;
 
+import javax.validation.constraints.Size;
+
 public class User {
 
     private Long id;
+    @Size(min = 3, message = "Username should be at least 3 characters long")
     private String username;
     private String password;
 
